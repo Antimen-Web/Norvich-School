@@ -1,0 +1,250 @@
+/* ======= Adaptive ======= */
+@media (max-height: 900px) {
+  .main-section {
+    .back-images {
+      .back-img4 {
+        display: block;
+        visibility: hidden;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    font-size: calc(14px + (20 - 14) * ( (100vw - 320px) / ( 1200 - 320) ));
+    h1 {
+      font-size: calc(35px + (60 - 35) * ( (100vw - 320px) / ( 1200 - 320) ));
+    }
+    h2 {
+      font-size: calc(25px + (40 - 25) * ( (100vw - 320px) / ( 1200 - 320) ));
+    }
+    h3 {
+      font-size: calc(20px + (30 - 20) * ( (100vw - 320px) / ( 1200 - 320) ));
+    }
+
+    .main-section {
+      .back-images {
+        .back-img6 {
+          left: 75%;
+        }
+        .back-img2 {
+          top: 20%;
+          left: 10%;
+        }
+        .back-img11 {
+          display: block;
+          visibility: hidden;
+        }
+        .back-img16 {
+          display: block;
+          visibility: hidden;
+        }
+        .back-img18 {
+          display: block;
+          visibility: hidden;
+        }
+      }
+    }
+    .principles-section {
+      .container {
+        .content {
+          .principle {
+            width: 100%;
+            text-align: center;
+            margin: 2em auto;
+
+            img {
+              width: calc(20% + (10 - 20) * ( (100vw - 320px) / ( 1200 - 320) ));
+            }
+          }
+        }
+      }
+    }
+    .contacts-section {
+      .container {
+        max-width: none;
+        .content {
+          text-align: center;
+          .logo {
+            width: 100%;
+            margin-bottom: 1em;
+            img {
+              width: 30%; 
+            }
+          }
+          .contacts {
+            a {
+              font-size: calc(20px + (30 - 20) * ( (100vw - 320px) / ( 1200 - 320) ));
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-section {
+    .back-images {
+      .back-img5 {
+        display: block;
+        visibility: hidden;
+      }
+      .back-img8 {
+        top: 85%;
+        left: 35%;
+      }
+      .back-img14 {
+        display: block;
+        visibility: hidden;
+      }
+    }
+    .container {
+      .title {
+        .form-group {
+          flex-direction: column;
+          .form {
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+  }
+  .about-section {
+    .container {
+      flex-wrap: wrap;
+      justify-content: center;
+      .image {
+        width: 50%;
+      }
+    }
+  }
+  .directions-section {
+    .container {
+      flex-direction: column;
+      text-align: center;
+      h1 {
+        margin-top: 1em;
+      }
+      .physics {
+        width: 100%;
+      }
+      .math {
+        width: 100%;
+      }
+    }
+  }
+  .principles-section {
+    .container {
+      .content {
+        .principle {
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .price-section {
+    .container {
+      .image {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .main-section {
+    .back-images {
+      .back-img3 {
+        display: block;
+        visibility: hidden;
+      }
+      .back-img10 {
+        top: 40%;
+        left: 8%;
+      }
+      .back-img17 {
+        display: block;
+        visibility: hidden;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .main-section {
+    .back-images {
+      .back-img2 {
+        display: block;
+        visibility: hidden;
+      }
+      .back-img4 {
+        display: block;
+        visibility: hidden;
+      }
+      .back-img6 {
+        display: block;
+        visibility: hidden;
+      }
+      .back-img13 {
+        display: block;
+        visibility: hidden;
+      }
+      .back-img15 {
+        display: block;
+        visibility: hidden;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .main-section {
+    .back-images {
+      .back-img1 {
+        width: 10%;
+      }
+      .back-img9 {
+        top: auto;
+        bottom: 40%;
+        right: 8%;
+        width: 10%;
+      }
+      .back-img10 {
+        top: auto;
+        bottom: 40%;
+        left: 8%;
+        width: 10%;
+      }
+      .back-img12 {
+        display: block;
+        visibility: hidden;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .main-section {
+    .back-images {
+      .back-img1 {
+        display: block;
+        visibility: hidden;
+      }
+      .back-img7 {
+        display: block;
+        visibility: hidden;
+      }
+      .back-img9 {
+        top: auto;
+        bottom: 10%;
+        right: 8%;
+        width: 10%;
+      }
+      .back-img10 {
+        top: auto;
+        bottom: 10%;
+        left: 8%;
+        width: 10%;
+      }
+    }
+  }
+}

@@ -1,0 +1,334 @@
+/* ======= Colors ======= */
+$back-color1: #2b59aa;
+$back-color2: #1b396e;
+$back-color3: #0b182e;
+$headers-orange: #d98e04;
+$headers-blue: #01aad9;
+$white-1: #ffffff;
+$white-07: #b3b3b3;
+/* ====== Footer ====== */
+.footer {
+  background: #26282c;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15px 0;
+}
+/* ======= About ======= */
+.about-section {
+  overflow: hidden;
+  background-color: $back-color2;
+
+  .container {
+    display: flex;
+    align-items: center;
+    margin: 2em auto;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h2 {
+        margin-bottom: 2em;
+        color: $headers-orange;
+      }
+    }
+    .image {
+      width: 200%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+/* ======= Directions ======= */
+.directions-section {
+  overflow: hidden;
+  background: linear-gradient($back-color2, $back-color1), 
+              -webkit-linear-gradient(top, $back-color2, $back-color1);
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .physics {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        color: $headers-blue;
+        margin-bottom: 1em;
+      }
+      .image {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .math {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        color: $headers-orange;
+        margin-bottom: 1em;
+      }
+      .image {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+/* ======= Principles ======= */
+.principles-section {
+  overflow: hidden;
+  background-color: $back-color2;
+
+  .container {
+    h2 {
+      color: $headers-blue;
+      margin: 1em auto;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+
+      .principle {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        margin: 4em auto; 
+
+        img {
+          width: 30%;
+        }
+        p {
+          margin-left: 5em;
+        }
+      }
+    }
+  }
+}
+/* ======= Price ======= */
+.price-section {
+  overflow: hidden;
+  background: linear-gradient($back-color2, $back-color1), 
+              -webkit-linear-gradient(top, $back-color2, $back-color1);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      color: $headers-orange;
+      margin: 1em auto;
+    }
+    .image {
+      width: 50%;
+      margin-top: 5em;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+/* ======= Contacts ======= */
+.contacts-section {
+  position: relative;
+  overflow: hidden;
+  background-color: $back-color3;
+
+  .contacts-svg {
+    position: absolute;
+    width: 100%;
+    background-color: $back-color1;
+    fill: $back-color3;
+    z-index: 1;
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+
+    h1 {
+      color: $headers-blue;
+      margin: 0.5em auto;
+      text-align: center;
+    }
+    .content {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .logo {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100%;
+        }
+      }
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1em;
+
+        a, .email {
+          font-size: 30px;
+          margin-bottom: 30px;
+        }
+        .email {
+          position: relative;
+          width: 100%;
+
+          .tooltiptext {
+            visibility: hidden;
+            font-size: 15px;
+            width: 140px;
+            background-color: $headers-orange;
+            color: $white-1;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            top: -70px;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            -webkit-transition: opacity 0.5s ease;
+            -moz-transition: opacity 0.5s ease;
+            transition: opacity 0.5s ease;
+          }
+          .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: $headers-orange transparent transparent transparent;
+          }
+        }
+        .email:hover .tooltiptext {
+          visibility: visible;
+          opacity: 1;
+        }
+        .email:active .tooltiptext {
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .form {
+          width: 260px;
+          padding: 14px 50px;
+          margin-bottom: 1em;
+          background-color: $headers-orange;
+          -webkit-border-radius: 45px;
+          -moz-border-radius: 45px;
+          border-radius: 45px;
+          border: none;
+          -webkit-transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+
+          .inp {
+            text-align: center;
+            color: $white-1;
+            width: 100%;
+            border: 0;
+            padding: 0;
+            background: none;
+            border-radius: 45px;
+            transition: all 0.15s ease;
+          }
+          .inp::placeholder {
+            color: $white-1;
+          }
+          .inp:focus {
+            outline: none;
+          }
+        }
+        .form:hover {
+          background-color: $back-color2;
+        }
+        .button {
+          background-color: $headers-orange;
+          color: $white-1;
+          transition: all 0.5s ease;
+        }
+        .button:hover {
+          background-color: $back-color2;
+          color: $headers-orange;
+          transition: all 0.5s ease;
+        }
+        .button:focus {
+            outline: none;
+        }
+        .input-checkbox {
+          color: $white-1;
+          font-size: 10px;
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          width: 260px;
+          margin-bottom: 1em;
+          border-radius: 45px;
+          cursor: pointer;
+
+          input {
+            width: 60px;
+            height: 20px;
+          }
+          input:focus {
+            outline: none;
+          }
+          label {
+            margin: 0;
+            cursor: pointer;
+
+            a {
+              color: $headers-blue;
+            }
+            a:hover {
+              color: $headers-orange;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* ======= Consent ======= */
+.consent-section {
+  padding: 5em 2em 1em 2em;
+  background: linear-gradient($back-color2, $back-color1), 
+              -webkit-linear-gradient(top, $back-color2, $back-color1);
+  .mark, mark {
+    background: none;
+    color: $headers-orange;
+  }
+}

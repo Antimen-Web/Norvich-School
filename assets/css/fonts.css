@@ -1,0 +1,29 @@
+@font-face {
+font-family: "Futura PT Book";
+src: url("../fonts/FuturaPT-Book.eot"); 
+src: url("../fonts/FuturaPT-Book.eot?#iefix") format("embedded-opentype"),
+     url("../fonts/FuturaPT-Book.woff") format("woff"),
+     url("../fonts/FuturaPT-Book.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+
+@font-face {
+font-family: "Object Sans";
+src: url("../fonts/ObjectSans-Regular.eot"); 
+src: url("../fonts/ObjectSans-Regular.eot?#iefix") format("embedded-opentype"),
+     url("../fonts/ObjectSans-Regular.woff") format("woff"),
+     url("../fonts/ObjectSans-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+}
+
+@font-face {
+font-family: "Object Sans Heavy";
+src: url("../fonts/ObjectSans-Heavy.eot"); 
+src: url("../fonts/ObjectSans-Heavy.eot?#iefix") format("embedded-opentype"),
+     url("../fonts/ObjectSans-Heavy.woff") format("woff"),
+     url("../fonts/ObjectSans-Heavy.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
